@@ -5,5 +5,6 @@ from lohae import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.buy, name="buy"),
+    path('', views.productlist, name="productlist"),
+    path('base/', views.base, name="base"),
 ]

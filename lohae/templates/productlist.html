@@ -1,0 +1,112 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title%}LOHAE - 구매하기{% endblock %}
+
+{% block link %}{% static 'css/productlist.css' %}{% endblock %}
+
+<!-- Main content -->
+{% block content%}
+
+<p class="box-title">최근 인기 추가 상품</p>
+
+<div class="recent-list">
+
+    <div class="recent-product-box">
+
+        <div class="recent-product">
+            <div class="recent-image">
+                이미지
+            </div>
+            <div class="recent-name">
+                상품명
+            </div>
+        </div>
+
+        <div class="recent-product">
+            <div class="recent-image">
+                이미지
+            </div>
+            <div class="recent-name">
+                상품명
+            </div>
+        </div>
+
+        <div class="recent-product">
+            <div class="recent-image">
+                이미지
+            </div>
+            <div class="recent-name">
+                상품명
+            </div>
+        </div>
+
+        <div class="recent-product">
+            <div class="recent-image">
+                이미지
+            </div>
+            <div class="recent-name">
+                상품명
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<p class="box-title">판매 중인 랜덤박스</p>
+
+<div class="random-list">
+
+    <div class="random-product-box">
+
+        <div class="random-product">
+            <div class="random-image">
+                <img src="{% static 'images/randombox_image.jpg'%}" style='width:100%;height:100%'>
+            </div>
+            <div class="random-body">
+                <div class="random-title">
+                    소독 관련 랜덤박스
+                </div>
+                <div class="random-price">
+                    99,999원
+                </div>
+                <a href="" class="random-button">구매하기</a>
+            </div>
+        </div>
+
+        <div class="random-product">
+            <div class="random-image">
+                <img src="{% static 'images/randombox_image.jpg'%}" style='width:100%;height:100%'>
+            </div>
+            <div class="random-body">
+                <div class="random-title">
+                    즐거움 관련 랜덤박스
+                </div>
+                <div class="random-price">
+                    99,999원
+                </div>
+                <a href="" class="random-button">구매하기</a>
+            </div>
+        </div>
+
+        <div class="random-product">
+            <div class="random-image">
+                <img src="{% static 'images/randombox_image.jpg'%}" style='width:100%;height:100%'>
+            </div>
+            <div class="random-body">
+                <div class="random-title">
+                    전자기기 랜덤박스
+                </div>
+                <div class="random-price">
+                    99,999원
+                </div>
+                <a href="" class="random-button">구매하기</a>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}
