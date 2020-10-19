@@ -1,0 +1,86 @@
+body {
+    margin-left: 100px;
+    margin-right: 100px;
+    padding: 0;
+    background-image: url("/static/images/background_image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+header {
+    height: 150px;
+    padding-bottom: 10px;
+}
+
+nav {
+    height: 50px;
+    border-top: 5px solid red;
+    border-bottom: 5px solid red ;
+
+}
+
+.go-to-buy{
+    float: left;
+    width: 50%;
+    padding-top: 10px;
+
+}
+
+.go-to-buy-text{
+
+    color: red;
+    font-size: 20px;
+    text-align: right;
+    padding-right: 130px;
+
+}
+
+.send-message{
+    display: inline-block;
+    width: 50%;
+    padding-top: 10px;
+
+}
+
+.send-message-text{
+    color: red;
+    font-size: 20px;
+    text-align: left;
+    padding-left: 130px;
+    display: inline-block;
+}
+
+.nav-login{
+    color: white;
+    font-size: 15px;
+    display: inline;
+    float: right;
+    border: 1px solid red;
+    border-radius: 10px;
+    background-color: red;
+    width: 60px;
+    height: 30px;
+    text-align: center;
+}
+
+main {
+    padding: 30px 30px 0 30px;
+    height: auto;
+}
+
+.logo-image{
+    text-align: center;
+}
+
+footer {
+    height: 100px;
+
+}
+
+.red-box{
+    background-color: red;
+    border-radius: 15px;
+    min-height: 850px;    
+}
+

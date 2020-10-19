@@ -1,7 +1,6 @@
 {% load static %}
-
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -14,32 +13,20 @@
 
 <body>
 
-    <!-- Header -->
-    <header>
-        <div class="logo-image">
-            <img src="{% static 'images/lohae_logo.png'%}" width="190" height="190">
-        </div>
+    <!-- Header & Nav -->
+    <header class="header">
+        <div class="box1 overflow">
+            <a href="{% url 'main' %}"><img src="{% static 'images/lohae_logo.png'%}" width=150px alt="logo"class="logo"></a>
+            <div class="line1"></div>
+            <span class="inline">
+                <span class="font1">구매하러 가기</span>
+                <span class="line3"></span>
+                <span class="font2">응원메세지 보기</span>
+                <a href="#"><button class="loginbutton">로그인</button></a>
+            </span>
+            <div class="line2"></div>
+            <div>
     </header>
-
-    <!-- NAV VAR -->
-    <nav>
-        <div class="go-to-buy">
-            <div class="go-to-buy-text">
-                구매하러 가기
-            </div>
-        </div>
-        <div class="send-message">
-            <div class="send-message-text">
-                응원 메세지 보내기
-            </div>
-
-            <div class="nav-login">
-                로그인
-            </div>
-
-        </div>
-
-    </nav>
 
     <!-- Main Content -->
     <main>
@@ -49,7 +36,6 @@
             {% endblock %}
         </div>
     </main>
-
 
     <!-- Footer -->
     <footer>

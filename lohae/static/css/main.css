@@ -1,0 +1,275 @@
+.logo {
+    margin-top: 30px;
+    margin-bottom: 5px;
+    margin-left: 687px;
+    /* margin: 0 auto; */
+}
+
+html {
+    background-color: rgb(255, 248, 236);
+    background-image: url("/static/images/배경2.png");
+    background-position: 20px 55px;
+    background-repeat: no-repeat;
+}
+
+header {
+    background-color: transparent;
+}
+
+body {
+    background-color: rgb(255, 248, 236) !important;
+    background-image: url("/static/images/배경2.png");
+    background-position: 20px 55px;
+    background-repeat: no-repeat;
+}
+
+.box1 {
+    background-color: transparent;
+    margin-right: 250px;
+}
+
+.box2 {
+    background-color: transparent;
+    margin-top: 45px;
+    width: max-content;
+
+}
+
+.box3 {
+    background-color: transparent;
+    width: 1530px;
+    padding-left: 0.1px;
+    margin-top: 40px;
+    padding-top: 40px;
+    text-align: center;
+    color: rgb(230, 58, 69);
+    font-size: 30px;
+    font-weight: bold;
+    overflow: hidden;
+}
+
+.box4 {
+    margin-top: -100px;
+    width: 980px;
+    height: 500px;
+    margin-left: 220px;
+}
+
+.box5 {
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-top: -280px;
+    padding-top: 70px;
+    margin-bottom: 100px;
+    background-color: rgb(100, 63, 6);
+    height: 450px;
+    border-radius: 20px;
+}
+
+.box6 {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: -30px;
+    background-color: white;
+    height: 350px;
+    border-radius: 20px;
+}
+
+.shadow {
+    box-shadow: 5px 5px 5px 5px gray;
+}
+
+.line {
+    width: 1000px;
+    height: 3px;
+    margin-top: 10px;
+    margin-left: 260px;
+    background-color: rgb(230, 58, 69);
+}
+
+.overflow {
+    overflow: hidden;
+    display: inline-block;
+}
+
+.loginbutton {
+    margin-left: 310px;
+    vertical-align: bottom;
+    background: rgb(230, 58, 69);
+    color: rgb(255, 248, 236);
+    border: none;
+    position: relative;
+    height: 30px;
+    font-size: 12px;
+    padding: 0 1em;
+    cursor: pointer;
+    transition: 800ms ease all;
+    outline: none;
+}
+
+.loginbutton:hover {
+    background: rgb(255, 248, 236);
+    color: rgb(230, 58, 69);
+}
+
+.loginbutton:before,
+button:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 2px;
+    width: 0;
+    background: rgb(230, 58, 69);
+    transition: 400ms ease all;
+}
+
+.loginbutton:after {
+    right: inherit;
+    top: inherit;
+    left: 0;
+    bottom: 0;
+}
+
+.loginbutton:hover:before,
+.loginbutton:hover:after {
+    width: 100%;
+    transition: 800ms ease all;
+}
+
+.b04_3d_tick {
+    perspective: 500px;
+    -webkit-perspective: 500px;
+    -moz-perspective: 500px;
+    perspective-origin: center top;
+    -webkit-perspective-origin: center top;
+    -moz-perspective-origin: center top;
+}
+
+.b04_3d_tick div {
+    position: absolute;
+    text-align: center;
+    width: 200px;
+    height: 45px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding: 10px;
+    border: rgb(230, 58, 69) solid 1px;
+}
+
+.b04_3d_tick div:nth-child(1) {
+    color: rgb(230, 58, 69);
+    background-color: #ffffff;
+    transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+}
+
+.b04_3d_tick div:nth-child(2) {
+    color: #ffffff;
+    background-color: rgb(230, 58, 69);
+    transform: rotateX(90deg);
+    -webkit-transform: rotateX(90deg);
+    -moz-transform: rotateX(90deg);
+    transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    transform-origin: left top;
+    -webkit-transform-origin: left top;
+    -moz-transform-origin: left top;
+}
+
+.b04_3d_tick:hover div:nth-child(1) {
+    transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    background-color: rgb(230, 58, 69);
+}
+
+.b04_3d_tick:hover div:nth-child(2) {
+    transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    transform: rotateX(0deg);
+    -webkit-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+}
+
+.button_base {
+    margin: 0;
+    border: 0;
+    font-size: 18px;
+    position: relative;
+    /* top: 50%; */
+    /* left: 50%; */
+    /* margin-top: -25px; */
+    /* margin-left: -100px; */
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-user-select: none;
+    cursor: default;
+    display: inline-block;
+}
+
+.bb {
+    margin-left: 462px;
+    width: 200px;
+}
+
+.bc {
+    margin-left: 195px;
+    width: 200px;
+}
+
+.absolute {
+    position: absolute;
+    top: 700px;
+    left: 200px;
+}
+
+.relative {
+    position: relative;
+    top: -325px;
+    left: 265px;
+}
+
+.banner {
+    padding: 0px;
+    height: 100%;
+    width: 1000px;
+}
+
+.carousel-control-prev {
+    background-image: url("/static/images/arrow_background_1.png");
+    background-repeat: no-repeat;
+}
+
+.carousel-control-next {
+    background-image: url("/static/images/arrow_background_2.png");
+    background-repeat: no-repeat;
+}
+
+.uu {
+    position: relative;
+    top: -40px;
+    /* margin-top: -100px; */
+    margin-left: 50px;
+}
+
+.cheer {
+    position: relative;
+    top: 6px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    opacity: 0.7;
+}
+
+.inline {
+    display: inline;
+}

@@ -1,67 +1,113 @@
-body {
-    margin-left: 100px;
-    margin-right: 100px;
-    padding: 0;
-    background-image: url("/static/images/background_image.jpg");
+.line1{
+    width: 1000px;
+    height: 3px;
+    margin-top: 6px;
+    margin-left:252px;
+    margin-bottom: 2px;
+    background-color: rgb(230, 58, 69);
+}
+.line2{
+    width: 1000px;
+    height: 3px;
+    margin-top: 2px;
+    margin-left:252px;
+    margin-bottom: 2px;
+    background-color: rgb(230, 58, 69);
+}
+.overflow{
+    overflow: hidden;
+    display: inline-block;
+}
+.loginbutton{
+    margin-left: 172px;
+    vertical-align: bottom;
+    background: rgb(230, 58, 69);
+    color:rgb(255, 248, 236);
+    border:none;
+    position:relative;
+    height:30px;
+    font-size:12px;
+    padding:0 1em;
+    cursor:pointer;
+    transition:800ms ease all;
+    outline:none;
+  }
+.loginbutton:hover{
+    background:rgb(255, 248, 236);
+    color: rgb(230, 58, 69);
+  }
+.loginbutton:before,button:after{
+    content:'';
+    position:absolute;
+    top:0;
+    right:0;
+    height:2px;
+    width:0;
+    background:  rgb(230, 58, 69);
+    transition:400ms ease all;
+  }
+.loginbutton:after{
+    right:inherit;
+    top:inherit;
+    left:0;
+    bottom:0;
+  }
+.loginbutton:hover:before,.loginbutton:hover:after{
+    width:100%;
+    transition:800ms ease all;
+  }
+  .logo{
+    margin-top: 22px;
+    margin-bottom: 5px;;
+    margin-left: 679px;
+    /* margin: 0 auto; */
+}
+html{
+    background-color: rgb(255, 248, 236);
+    background-image: url("/static/images/배경2.png");
+    background-position: 20px 55px;
     background-repeat: no-repeat;
-    background-size: cover;
 
 }
-
-header {
-    height: 150px;
-    padding-bottom: 10px;
+header{
+    background-color: transparent;
 }
-
-nav {
-    height: 50px;
-    border-top: 5px solid red;
-    border-bottom: 5px solid red ;
-
+body{
+    /* background-color: rgb(255, 248, 236) !important; */
+    /* background-image: url('배경2.png');
+    background-position: 20px 55px;
+    background-repeat: no-repeat; */
+    background-color: transparent;
 }
-
-.go-to-buy{
-    float: left;
-    width: 50%;
-    padding-top: 10px;
-
+.box1{
+    background-color: transparent;
+    margin-right: 250px;
 }
-
-.go-to-buy-text{
-
-    color: red;
-    font-size: 20px;
-    text-align: right;
-    padding-right: 130px;
-
-}
-
-.send-message{
-    display: inline-block;
-    width: 50%;
-    padding-top: 10px;
-
-}
-
-.send-message-text{
-    color: red;
-    font-size: 20px;
-    text-align: left;
-    padding-left: 130px;
-    display: inline-block;
-}
-
-.nav-login{
-    color: white;
+.font1{
+    position: relative;
+    top: -4px;
+    color: rgb(230, 58, 69);
     font-size: 15px;
+    font-weight: bold;
+    margin-left: 570px;
+}
+.font2{
+    position: relative;
+    top: -4px;
+    color: rgb(230, 58, 69);
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 190px;
+}
+.inline{
     display: inline;
-    float: right;
-    border: 1px solid red;
-    border-radius: 10px;
-    background-color: red;
-    width: 60px;
-    height: 30px;
-    text-align: center;
+}
+.line3{
+    position: relative;
+    left: 700px;
+    width:8px;
+    height: 10px;
+    background-color: rgb(230, 58, 69);
 }
 
 main {
@@ -69,18 +115,15 @@ main {
     height: auto;
 }
 
-.logo-image{
-    text-align: center;
+.red-box{
+    background-color: rgb(230, 58, 69);
+    border-radius: 15px;
+    height: auto;
+    margin-right: 200px;
+    margin-left: 200px;
+    padding-bottom: 20px;
 }
 
 footer {
     height: 100px;
-
 }
-
-.red-box{
-    background-color: red;
-    border-radius: 15px;
-    min-height: 850px;    
-}
-

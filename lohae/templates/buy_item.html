@@ -1,0 +1,128 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title%}LOHAE - 인테리어 랜덤박스{% endblock %}
+
+{% block link %}{% static 'css/buy_item.css' %}{% endblock %}
+
+
+<script src="#"></script>
+
+{% block content %}
+
+<!-- Main Content -->
+
+<!-- 제품명 -->
+<div class="container">
+  <!-- 그림 -->
+  <div class="itempicture">
+    <img src="다운로드.jpg" alt="item1" width="1000px">
+  </div>
+
+  <!--  제품이름 금액 구매하기 버튼까지  -->
+  <div class="itemDetail2">
+    <div>
+      <div>
+        인테리어 랜덤박스
+        <div>
+          판매가
+          <div>30000원(vat 포함)
+          </div>
+        </div>
+        <div>
+          배송비
+          <div>
+            총 결제금액이 40,000원 미만시 배송비2,500원이 청구됩니다.
+          </div>
+        </div>
+        <div>
+          전화주문
+          <div>
+            000-0000(평일 10:00~17:00 | 점심시간 12:00~13:00)
+          </div>
+        </div>
+      </div>
+      <div>
+        <form>
+          <select name="selectbox">
+            <option value="none">상품선택</option>
+            <option value="korean">인테리어 랜덤박스 A</option>
+            <option value="english">인테리어 랜덤박스 B</option>
+            <option value="chinese">인테리어 랜덤박스 C</option>
+          </select>
+        </form>
+      </div>
+      <div>
+        상품금액 합계
+        <div>
+          xxx원
+        </div>
+      </div>
+      <div>
+        <button type="button" onclick="location.href='www.naver.com' ">구매하기</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- //사진 밑 구성 글 -->
+  <div clas="itemComposition">
+    <div>
+      구성
+    </div>
+    <div>
+      랜덤박스 A = 접시,그릇
+      랜덤박스 B = 소파
+      랜덤박스 C = 가전기구
+    </div>
+  </div>
+</div>
+
+<!-- //상세설명 및 구성품 사진들 -->
+<div class="itemPicture">
+  <img src="제품상세설명.jpg" alt="detail">
+</div>
+<div>
+</div>
+{% endblock %}
+
+<!-- //후기게시글 -->
+<!-- <div class="reviewTable">
+  <table summary="게시판의 글제목 리스트" style="margin-left:auto; margin-right: auto;">
+    <caption>게시판리스트</caption>
+    <colgroup>
+      <col>
+      <col width="110">
+      <col width="100">
+      <col width="80">
+    </colgroup>
+    <thead>
+      <tr>
+        <th scope="col"> 제목 </th>
+        <th scope="col"> 글쓴이 </th>
+        <th scope="col"> 날짜 </th>
+        <th scope="col"> 조회수 </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="title">
+          <a href="#"> 게시판 제목 </a>
+          <img width="13" height="12" class="pic" alt="" src="#">
+          <a class="comment" href="#">[5]</a><img width="10" height="9" class="new" alt="새글" src="#">
+        </td>
+        <td class="name"> 글쓴이 이름 </td>
+        <td class="date"> 2020/10/17 </td>
+         //조회수 
+        <td class="hit"> 1234 </td>
+      </tr>
+      <tr class="reply">
+        <td class="title" style="padding-left:30px;">
+          <a href="#"> 답글 </a>
+        </td>
+        <td class="name"> 박장훈 </td>
+        <td class="date"> 2020/10/17 </td>
+        <td class="hit"> 123456 </td>
+      </tr>
+    </tbody>
+  </table>
+</div> -->

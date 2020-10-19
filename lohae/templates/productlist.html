@@ -6,17 +6,19 @@
 {% block link %}{% static 'css/productlist.css' %}{% endblock %}
 
 <!-- Main content -->
+
 {% block content%}
 
 <p class="box-title">최근 인기 추가 상품</p>
 
+<!-- 최근 인기 추가 상품 이미지 -->
 <div class="recent-list">
 
     <div class="recent-product-box">
 
         <div class="recent-product">
             <div class="recent-image">
-                이미지
+                이미지1
             </div>
             <div class="recent-name">
                 상품명
@@ -25,7 +27,7 @@
 
         <div class="recent-product">
             <div class="recent-image">
-                이미지
+                이미지2
             </div>
             <div class="recent-name">
                 상품명
@@ -34,7 +36,7 @@
 
         <div class="recent-product">
             <div class="recent-image">
-                이미지
+                이미지3
             </div>
             <div class="recent-name">
                 상품명
@@ -43,7 +45,25 @@
 
         <div class="recent-product">
             <div class="recent-image">
-                이미지
+                이미지4
+            </div>
+            <div class="recent-name">
+                상품명
+            </div>
+        </div>
+
+        <div class="recent-product">
+            <div class="recent-image">
+                이미지5
+            </div>
+            <div class="recent-name">
+                상품명
+            </div>
+        </div>
+
+        <div class="recent-product">
+            <div class="recent-image">
+                이미지6
             </div>
             <div class="recent-name">
                 상품명
@@ -56,13 +76,15 @@
 
 <p class="box-title">판매 중인 랜덤박스</p>
 
+<!-- 판매 중인 랜덤 박스 이미지 -->
+
 <div class="random-list">
 
     <div class="random-product-box">
 
         <div class="random-product">
             <div class="random-image">
-                <img src="{% static 'images/randombox_image.jpg'%}" style='width:100%;height:100%'>
+                <img src="{% static 'images/randombox_image.jpg'%}" style='width:100%; height:100%'>
             </div>
             <div class="random-body">
                 <div class="random-title">
@@ -97,6 +119,21 @@
             <div class="random-body">
                 <div class="random-title">
                     전자기기 랜덤박스
+                </div>
+                <div class="random-price">
+                    99,999원
+                </div>
+                <a href="" class="random-button">구매하기</a>
+            </div>
+        </div>
+
+        <div class="random-product">
+            <div class="random-image">
+                <img src="{% static 'images/randombox_image.jpg'%}" style='width:100%;height:100%'>
+            </div>
+            <div class="random-body">
+                <div class="random-title">
+                     간식 랜덤박스
                 </div>
                 <div class="random-price">
                     99,999원
