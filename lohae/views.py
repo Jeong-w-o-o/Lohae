@@ -10,3 +10,6 @@ def productlist(request):
 
 def buy_item(request):
     return render(request, 'buy_item.html')
+
+def write_messages(request):
+    return render(request, 'write_messages.html')

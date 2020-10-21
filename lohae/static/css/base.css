@@ -118,12 +118,19 @@ main {
 .red-box{
     background-color: rgb(230, 58, 69);
     border-radius: 15px;
+    width: 1050px;
     height: auto;
     margin-right: 200px;
     margin-left: 200px;
     padding-bottom: 20px;
+    padding-top: 20px;
 }
 
 footer {
     height: 100px;
+}
+
+a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+    color: black;
 }

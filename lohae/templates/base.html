@@ -16,12 +16,13 @@
     <!-- Header & Nav -->
     <header class="header">
         <div class="box1 overflow">
-            <a href="{% url 'main' %}"><img src="{% static 'images/lohae_logo.png'%}" width=150px alt="logo"class="logo"></a>
+            <a href="{% url 'main' %}"><img src="{% static 'images/lohae_logo.png'%}" width=150px alt="logo"
+                    class="logo"></a>
             <div class="line1"></div>
             <span class="inline">
-                <span class="font1">구매하러 가기</span>
+                <a href="{% url 'productlist' %}"><span class="font1">구매하러 가기</span></a>
                 <span class="line3"></span>
-                <span class="font2">응원메세지 보기</span>
+                <a href="#"><span class="font2">응원메시지 보기</span></a>
                 <a href="#"><button class="loginbutton">로그인</button></a>
             </span>
             <div class="line2"></div>

@@ -18,7 +18,7 @@
 
         <div class="recent-product">
             <div class="recent-image">
-                이미지1
+                <img class="each-image" src="{% static 'images/randombox_image.jpg'%}">
             </div>
             <div class="recent-name">
                 상품명
@@ -27,7 +27,7 @@
 
         <div class="recent-product">
             <div class="recent-image">
-                이미지2
+                <img class="each-image" src="{% static 'images/randombox_image.jpg'%}">
             </div>
             <div class="recent-name">
                 상품명
@@ -36,7 +36,7 @@
 
         <div class="recent-product">
             <div class="recent-image">
-                이미지3
+                <img class="each-image" src="{% static 'images/randombox_image.jpg'%}">
             </div>
             <div class="recent-name">
                 상품명
@@ -45,7 +45,7 @@
 
         <div class="recent-product">
             <div class="recent-image">
-                이미지4
+                <img class="each-image" src="{% static 'images/randombox_image.jpg'%}">
             </div>
             <div class="recent-name">
                 상품명
@@ -54,7 +54,7 @@
 
         <div class="recent-product">
             <div class="recent-image">
-                이미지5
+                <img class="each-image" src="{% static 'images/randombox_image.jpg'%}">
             </div>
             <div class="recent-name">
                 상품명
@@ -63,7 +63,7 @@
 
         <div class="recent-product">
             <div class="recent-image">
-                이미지6
+                <img class="each-image" src="{% static 'images/randombox_image.jpg'%}">
             </div>
             <div class="recent-name">
                 상품명
@@ -82,68 +82,61 @@
 
     <div class="random-product-box">
 
-        <div class="random-product">
-            <div class="random-image">
-                <img src="{% static 'images/randombox_image.jpg'%}" style='width:100%; height:100%'>
-            </div>
-            <div class="random-body">
-                <div class="random-title">
-                    소독 관련 랜덤박스
+        <a href="{% url 'buy_item' %}">
+            <div class="random-product">
+                <div class="random-image">
+                    <img class="each-image" src="{% static 'images/randombox_image.jpg'%}">
                 </div>
-                <div class="random-price">
-                    99,999원
+                <div class="random-body">
+                    <div class="random-title">
+                        소독 관련 랜덤박스
+                    </div>
                 </div>
-                <a href="" class="random-button">구매하기</a>
             </div>
-        </div>
+        </a>
 
-        <div class="random-product">
-            <div class="random-image">
-                <img src="{% static 'images/randombox_image.jpg'%}" style='width:100%;height:100%'>
-            </div>
-            <div class="random-body">
-                <div class="random-title">
-                    즐거움 관련 랜덤박스
+        <a href="{% url 'buy_item' %}">
+            <div class="random-product">
+                <div class="random-image">
+                    <img class="each-image" src="{% static 'images/randombox_image.jpg'%}">
                 </div>
-                <div class="random-price">
-                    99,999원
+                <div class="random-body">
+                    <div class="random-title">
+                        즐거움 관련 랜덤박스
+                    </div>
                 </div>
-                <a href="" class="random-button">구매하기</a>
             </div>
-        </div>
+        </a>
 
-        <div class="random-product">
-            <div class="random-image">
-                <img src="{% static 'images/randombox_image.jpg'%}" style='width:100%;height:100%'>
-            </div>
-            <div class="random-body">
-                <div class="random-title">
-                    전자기기 랜덤박스
+        <a href="{% url 'buy_item' %}">
+            <div class="random-product">
+                <div class="random-image">
+                    <img class="each-image" src="{% static 'images/randombox_image.jpg'%}">
                 </div>
-                <div class="random-price">
-                    99,999원
-                </div>
-                <a href="" class="random-button">구매하기</a>
-            </div>
-        </div>
+                <div class="random-body">
+                    <div class="random-title">
+                        전자기기 랜덤박스
+                    </div>
 
-        <div class="random-product">
-            <div class="random-image">
-                <img src="{% static 'images/randombox_image.jpg'%}" style='width:100%;height:100%'>
-            </div>
-            <div class="random-body">
-                <div class="random-title">
-                     간식 랜덤박스
                 </div>
-                <div class="random-price">
-                    99,999원
-                </div>
-                <a href="" class="random-button">구매하기</a>
             </div>
-        </div>
+        </a>
+
+        <a href="{% url 'buy_item' %}">
+            <div class="random-product">
+                <div class="random-image">
+                    <img class="each-image" src="{% static 'images/randombox_image.jpg'%}">
+                </div>
+                <div class="random-body">
+                    <div class="random-title">
+                        간식 랜덤박스
+                    </div>
+                </div>
+            </div>
+        </a>
+
 
     </div>
-
 </div>
 
 {% endblock %}
