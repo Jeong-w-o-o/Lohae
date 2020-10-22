@@ -44,7 +44,13 @@ table {
 /* 여기까지 초기화 */
 
 
-
+@font-face {
+    font-family: SCDream5;
+    src: url('/static/fonts/SCDream5.otf')format('opentype');
+}
+body{
+	font-family: SCDream5;
+}
 
 .whiteBox {
 	background-color: white;
@@ -61,7 +67,7 @@ table {
 	border: 3px solid white;
 	margin-left: 120px;
 	margin-top: 50px;
-	
+	font-family: SCDream5;
 	
 }
 
