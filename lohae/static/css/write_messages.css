@@ -57,5 +57,23 @@
     width: 1000px;
     height: 3px;
     background-color: rgb(230, 58, 69);
-    /* padding-left: 50px; */
-} 
+    /* padding-left: 50px; 
+    }*/
+
+
+.message-title {
+    padding-left: 10px;
+    font-size: 20px;
+}
+
+.text-message {
+    width: 1000px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+
+.text-box {
+    width: 1000px;
+    height: 500px;
+}
