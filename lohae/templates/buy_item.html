@@ -66,16 +66,16 @@
               <form name='form'>
                 <table>
                   <tr>
-                    <td>갯수</td>
+                    <td>개수</td>
                     <td>
                       <table>
                         <tr>
                           <td><input type='text' name='count' value='1' size='1' readonly>
                           <td>
                           <td>
-                            <a href='' onclick='javascript_:change(1);'><img src="{% static 'images/arrow.png'%}"
+                            <a href='' onclick='javascript_:change(1);'><img src="{% static 'images/arrow.jpg'%}"
                                 onclick='javascript_:change(1);'></a><br>
-                            <a href='' onclick='javascript_:change(-1);'><img src="{% static 'images/arrow.png'%}"
+                            <a href='' onclick='javascript_:change(-1);'><img src="{% static 'images/arrow.jpg'%}"
                                 onclick='javascript_:change(1);'></a>
                             <!-- href 링크를 어디로 달아야되지/./.? -->
                           </td>
@@ -173,7 +173,7 @@
 
     <!-- //상세설명 및 구성품 사진들 -->
     <div class="itemPicture">
-      <img src="제품상세설명.jpg" alt="detail">
+      <img src="{% static 'images/제품상세설명.jpg'%}" alt="detail">
     </div>
   </div>
 </main>
