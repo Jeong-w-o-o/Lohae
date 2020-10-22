@@ -48,18 +48,19 @@ table {
     font-family: SCDream5;
     src: url('/static/fonts/SCDream5.otf')format('opentype');
 }
-body{
+
+main{
 	font-family: SCDream5;
 }
 
 .whiteBox {
 	background-color: white;
 	margin: 10px;
-    
     height: auto;
 	border: 1px solid white;
 	
 }
+
 .container{
     display: grid;
     grid-template-rows: repeat(2, 400px);
