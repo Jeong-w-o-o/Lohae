@@ -5,6 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="{% static 'images/lohae.ico'%}" type="image/x-icon">
     <title>{% block title %}{% endblock %}</title>
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="{% static 'css/base.css'%}">
@@ -18,6 +19,16 @@
         <div class="box1 overflow">
             <a href="{% url 'main' %}"><img src="{% static 'images/lohae_logo.png'%}" width=150px alt="logo"
                     class="logo"></a>
+            {% if user.is_authenticated %}
+            <span class="user">{{user}}님</span>
+            <a href="{% url 'logout' %}"><button class="loginbutton">로그아웃</button></a>
+            <a href="{% url 'mypage' %}"><button class="loginbutton">마이페이지</button></a>
+            {% else %}
+            <span class="realmargin"></span>
+
+            <a href="{% url 'login' %}"><button class="loginbutton">로그인</button></a>
+            <a href="{% url 'signup' %}"><button class="loginbutton">회원가입</button></a>
+            {% endif %}
             <div class="line1"></div>
             <span class="inline">
                 <a href="{% url 'productlist' %}">
@@ -27,7 +38,6 @@
                 <a href="{% url 'main' %}">
                     <span class="font2">응원메시지 보기</span>
                 </a>
-                <a href="#"><button class="loginbutton">로그인</button></a>
             </span>
             <div class="line2"></div>
             <div>
@@ -44,7 +54,7 @@
 
     <!-- Footer -->
     <footer>
-        
+
     </footer>
 
 </body>

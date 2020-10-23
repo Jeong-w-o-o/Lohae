@@ -8,7 +8,7 @@
 html {
     background-color: rgb(255, 248, 236);
     background-image: url("/static/images/배경2.png");
-    background-position: 20px 55px;
+    background-position: 0px 55px;
     background-repeat: no-repeat;
 }
 
@@ -19,7 +19,7 @@ header {
 body {
     background-color: rgb(255, 248, 236) !important;
     background-image: url("/static/images/배경2.png");
-    background-position: 20px 55px;
+    background-position: 0px 55px;
     background-repeat: no-repeat;
 }
 
@@ -64,6 +64,7 @@ body {
     background-color: rgb(100, 63, 6);
     height: 450px;
     border-radius: 20px;
+    width:920px;
 }
 
 .box6 {
@@ -93,7 +94,7 @@ body {
 }
 
 .loginbutton {
-    margin-left: 310px;
+    margin-left: 10px;
     vertical-align: bottom;
     background: rgb(230, 58, 69);
     color: rgb(255, 248, 236);
@@ -272,6 +273,16 @@ button:after {
 
 .inline {
     display: inline;
+}
+.user{
+    color: rgb(230, 58, 69);
+    vertical-align: bottom;
+    position: relative;
+    top: -5px;
+    margin-left: 100px;
+}
+.realmargin{
+    margin-left: 225px;
 }
 
 a{

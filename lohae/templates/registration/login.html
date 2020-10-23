@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOHAE</title>
+    <link rel="stylesheet" href="{% static 'css/login.css'%}">
+</head>
+
+
+<body>
+
+    <header class="header">
+        <div class="box1 overflow">
+            <a href="{% url 'main' %}"><img src="{% static 'images/lohae_logo.png'%}" width=150px alt="logo" class="logo"></a>
+            <div class="line"></div>
+        </div>
+
+    </header>
+    <div class ="box">
+        <h1>Log in</h1>
+        <form method ="POST" action="">
+            {% csrf_token %}
+            {{form}}
+            <input class ="input1" type="submit" value="로그인">
+        </form>
+        <a href="{% url 'signup' %}">
+            <button>회원가입</button>
+        </a>
+    </div>
+    <div class="line"></div>
+    
+</body>

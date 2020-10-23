@@ -1,4 +1,3 @@
-<!-- 사용한 색상 : #7A7878(진한 회색) #E60012(빨강) -->
 {% load static %}
 <!DOCTYPE html>
 <html lang="ko">
@@ -6,6 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="{% static 'images/lohae.ico'%}" type="image/x-icon"> 
     <title>LOHAE</title>
     <link rel="stylesheet" href="{% static 'css/main.css'%}">
 </head>
@@ -31,9 +31,17 @@
     <!-- Header & Login -->
     <header class="header">
         <div class="box1 overflow">
-            <a href="{% url 'main' %}"><img src="{% static 'images/lohae_logo.png'%}" width=150px alt="logo"
-                    class="logo"></a>
-            <a href="#"><button class="loginbutton">로그인</button></a>
+            <a href="{% url 'main' %}"><img src="{% static 'images/lohae_logo.png'%}" width=150px alt="logo" class="logo"></a>
+
+            {% if user.is_authenticated %}
+            <span class="user">{{user}}님</span>
+            <a href="{% url 'logout' %}"><button class="loginbutton">로그아웃</button></a>
+            <a href="{% url 'mypage' %}"><button class="loginbutton">마이페이지</button></a>
+            {% else %}
+            <span class="realmargin"></span>
+            <a href="{% url 'login' %}"><button class="loginbutton">로그인</button></a>
+            <a href="{% url 'signup' %}"><button class="loginbutton">회원가입</button></a>
+            {% endif %}
             <div class="line"></div>
         </div>
 
@@ -106,7 +114,7 @@
 
         <!-- Message -->
         <a name="go-to-the-message">
-            <div class="box5">
+            <div class="box5 overflow">
                 <span class="inline">
                     <span class="uu"><img src="{% static 'images/category.png'%}" width=40px height="40px"
                             alt="category">
