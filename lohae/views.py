@@ -1,15 +1,9 @@
 from django.shortcuts import render, redirect
-<<<<<<< HEAD
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth import views as auth_view
 from .forms import CustomAuthenticationForm
-
-
-
-=======
 from .forms import MsgForm
 from .models import Message
->>>>>>> ae62cd8ed675f11efd14b1300dc62b3fdc507ab0
 
 # Create your views here.
 
@@ -24,8 +18,13 @@ def buy_item(request):
     return render(request, 'buy_item.html')
 
 def write_messages(request):
-<<<<<<< HEAD
-    return render(request, 'write_messages.html')
+    if request.method == "POST":
+        filled_form = MsgForm(request.POST)
+        if filled_form.is_valid():
+            filled_form.save()
+            return redirect('main')
+    msg_form = MsgForm()
+    return render(request, 'write_messages.html', {'msg_form':msg_form})
 
 def signup(request):
     regi_form = UserCreationForm()
@@ -46,12 +45,4 @@ def mypage(request):
 class CustomLoginView(auth_view.LoginView):
     form_class = CustomAuthenticationForm
 
-=======
-    if request.method == "POST":
-        filled_form = MsgForm(request.POST)
-        if filled_form.is_valid():
-            filled_form.save()
-            return redirect('main')
-    msg_form = MsgForm()
-    return render(request, 'write_messages.html', {'msg_form':msg_form})
->>>>>>> ae62cd8ed675f11efd14b1300dc62b3fdc507ab0
+

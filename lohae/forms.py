@@ -1,5 +1,7 @@
-<<<<<<< HEAD
 from django.contrib.auth.forms import AuthenticationForm
+from django import forms
+from .models import Message
+
 class CustomAuthenticationForm(AuthenticationForm):
     error_messages = {
         'invalid_login': (
@@ -11,10 +13,6 @@ class CustomAuthenticationForm(AuthenticationForm):
         super(CustomAuthenticationForm, self).__init__(*args, **kwargs) # 꼭 있어야 한다!
         self.fields['username'].label = '유저이름'
         self.fields['password'].label = '비밀번호'
-=======
-from django import forms
-from .models import Message
-
 
 
 class MsgForm(forms.ModelForm):
@@ -31,4 +29,3 @@ class MsgForm(forms.ModelForm):
             'class': 'msg_content',
             'placeholder': 'To. xxx',
         })
->>>>>>> ae62cd8ed675f11efd14b1300dc62b3fdc507ab0

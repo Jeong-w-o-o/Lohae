@@ -274,7 +274,6 @@ button:after {
 .inline {
     display: inline;
 }
-<<<<<<< HEAD
 .user{
     color: rgb(230, 58, 69);
     vertical-align: bottom;
@@ -284,7 +283,7 @@ button:after {
 }
 .realmargin{
     margin-left: 225px;
-=======
+}
 
 a{
     text-decoration: none;
@@ -292,5 +291,4 @@ a{
 
 .message-content{
     padding-left: 5px;
->>>>>>> ae62cd8ed675f11efd14b1300dc62b3fdc507ab0
 }
