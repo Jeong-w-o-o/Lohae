@@ -1,0 +1,14 @@
+@font-face {
+    font-family: Maplestory_Bold;
+    src:  url("/static/fonts/Maplestory_Bold.ttf");
+  }
+
+@font-face {
+    font-family: Cafe24Dangdanghae;
+    src:  url("/static/fonts/Cafe24Dangdanghae.ttf");
+  }
+.title{
+    color: rgb(255, 248, 236);
+    margin-left: 50px;
+    font-family: Maplestory_Bold;
+}

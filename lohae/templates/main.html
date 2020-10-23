@@ -31,12 +31,15 @@
     <header class="header">
         <div class="box1 overflow">
             <a href="{% url 'main' %}"><img src="{% static 'images/lohae_logo.png'%}" width=150px alt="logo" class="logo"></a>
+
             {% if user.is_authenticated %}
+            <span class="user">{{user}}님</span>
             <a href="{% url 'logout' %}"><button class="loginbutton">로그아웃</button></a>
-            <img src="{% static 'images/lohae_logo.png'%}" width=150px alt="logo" class="logo">
-            {{user}}님
+            <a href="{% url 'mypage' %}"><button class="loginbutton">마이페이지</button></a>
             {% else %}
+            <span class="realmargin"></span>
             <a href="{% url 'login' %}"><button class="loginbutton">로그인</button></a>
+            <a href="{% url 'signup' %}"><button class="loginbutton">회원가입</button></a>
             {% endif %}
             <div class="line"></div>
         </div>

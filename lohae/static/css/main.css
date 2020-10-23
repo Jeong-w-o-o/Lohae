@@ -94,7 +94,7 @@ body {
 }
 
 .loginbutton {
-    margin-left: 310px;
+    margin-left: 10px;
     vertical-align: bottom;
     background: rgb(230, 58, 69);
     color: rgb(255, 248, 236);
@@ -273,4 +273,14 @@ button:after {
 
 .inline {
     display: inline;
+}
+.user{
+    color: rgb(230, 58, 69);
+    vertical-align: bottom;
+    position: relative;
+    top: -5px;
+    margin-left: 100px;
+}
+.realmargin{
+    margin-left: 225px;
 }

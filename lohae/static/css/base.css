@@ -3,13 +3,13 @@
     height: 3px;
     margin-top: 6px;
     margin-left:252px;
-    margin-bottom: 2px;
+    margin-bottom: 4px;
     background-color: rgb(230, 58, 69);
 }
 .line2{
     width: 1000px;
     height: 3px;
-    margin-top: 2px;
+    margin-top: 4px;
     margin-left:252px;
     margin-bottom: 2px;
     background-color: rgb(230, 58, 69);
@@ -19,7 +19,7 @@
     display: inline-block;
 }
 .loginbutton{
-    margin-left: 172px;
+    margin-left: 10px;
     vertical-align: bottom;
     background: rgb(230, 58, 69);
     color:rgb(255, 248, 236);
@@ -31,6 +31,7 @@
     cursor:pointer;
     transition:800ms ease all;
     outline:none;
+    margin-bottom: 4px;
   }
 .loginbutton:hover{
     background:rgb(255, 248, 236);
@@ -84,20 +85,21 @@ body{
     margin-right: 250px;
 }
 .font1{
-    position: relative;
-    top: -4px;
+
     color: rgb(230, 58, 69);
     font-size: 15px;
     font-weight: bold;
-    margin-left: 570px;
+    margin-left: 600px;
+    margin-top: 2px;
+    margin-bottom: 2px;
 }
 .font2{
-    position: relative;
-    top: -4px;
+
     color: rgb(230, 58, 69);
     font-size: 15px;
     font-weight: bold;
-    margin-left: 190px;
+    margin-left: 110px;
+
 }
 .inline{
     display: inline;
@@ -133,4 +135,15 @@ footer {
 a:link, a:visited, a:hover, a:active {
     text-decoration: none;
     color: black;
+}
+
+.user{
+    color: rgb(230, 58, 69);
+    vertical-align: bottom;
+    position: relative;
+    top: -10px;
+    margin-left: 97px;
+}
+.realmargin{
+    margin-left: 225px;
 }

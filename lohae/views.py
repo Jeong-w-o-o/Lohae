@@ -32,5 +32,10 @@ def signup(request):
 def login(request):
     return render(request, 'login.html')
 
+def mypage(request):
+    return render(request, 'mypage.html')
+
+
 class CustomLoginView(auth_view.LoginView):
     form_class = CustomAuthenticationForm
+
