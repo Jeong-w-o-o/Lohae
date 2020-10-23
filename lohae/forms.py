@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 from django.contrib.auth.forms import AuthenticationForm
 class CustomAuthenticationForm(AuthenticationForm):
     error_messages = {
@@ -10,3 +11,24 @@ class CustomAuthenticationForm(AuthenticationForm):
         super(CustomAuthenticationForm, self).__init__(*args, **kwargs) # 꼭 있어야 한다!
         self.fields['username'].label = '유저이름'
         self.fields['password'].label = '비밀번호'
+=======
+from django import forms
+from .models import Message
+
+
+
+class MsgForm(forms.ModelForm):
+
+    class Meta:
+        model = Message
+        fields = ('content',)
+
+    # 모델폼 customize
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs) 
+        self.fields['content'].label = " "
+        self.fields['content'].widget.attrs.update({
+            'class': 'msg_content',
+            'placeholder': 'To. xxx',
+        })
+>>>>>>> ae62cd8ed675f11efd14b1300dc62b3fdc507ab0
