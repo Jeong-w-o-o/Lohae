@@ -1,9 +1,10 @@
 {% extends 'base.html' %}
 {% load static %}
 
-{% block title%}LOHAE - 구매하기{% endblock %}
+{% block title%}LOHAE - 응원 메시지 쓰기{% endblock %}
 
 {% block link %}{% static 'css/write_messages.css' %}{% endblock %}
+
 
 <!-- Main Content -->
 
@@ -12,7 +13,10 @@
 <p class="white-box-title">코로나19로 인해 고생하는 의료진들에게 랜덤박스 선물 가능</p>
 
 <div class="white-box">
+
+    <!-- 랜덤박스 고르기 -->
     <div class="mini-box-list">
+
         <div class="mini-box-of-box">
             <div class="mini-box">이미지</div>
             <div class="box-title">이름</div>
@@ -49,7 +53,6 @@
             <input type="radio" id="radio" name="rd">
         </div>
     </div>
-
     <hr align="center" style="border: solid 3px rgb(230, 58, 69); background-color: rgb(230, 58, 69); width: 1000px;">
 
     <p class="message-title">코로나 담당 의료진들에게 응원 메세지 쓰기</p>
@@ -79,8 +82,51 @@
     <input class="text-box" type="text" value="메시지를 입력하세요.">
     </div>
 
-</div>
+    <!-- 의료진에게 메시지 쓰기 -->
 
+    <h4 class="write-a-message">코로나 담당 의료진에게 응원 메시지 쓰기</h4>
+
+    <div class="mini-box-list-of-message">
+
+        <div class="mini-box-of-box">
+            <div class="mini-box">사진</div>
+            <div class="box-title">이름</div>
+            <input type="radio" id="message" name="rd" checked>
+        </div>
+
+        <div class="mini-box-of-box">
+            <div class="mini-box">사진</div>
+            <div class="box-title">이름</div>
+            <input type="radio" id="message" name="rd">
+        </div>
+
+        <div class="mini-box-of-box">
+            <div class="mini-box">사진</div>
+            <div class="box-title">이름</div>
+            <input type="radio" id="message" name="rd">
+        </div>
+
+        <!-- Js -->
+        <script language="javascript">
+            function msg() {
+                if (confirm("구매 완료했습니다.")) {
+                    window.location.href = "{% url 'main' %}"
+                }
+            }
+        </script>
+
+
+        <div class="message-box">
+            <form method="POST" action="">
+                {% csrf_token %}
+                {{msg_form}}
+                <div class="submit-btn"><input type="submit" value="구매하기" class="submit-btn-btn" onclick="msg()">
+                </div>
+            </form>
+        </div>
+
+    </div>
+</div>
 
 
 

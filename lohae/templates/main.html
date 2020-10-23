@@ -31,7 +31,8 @@
     <!-- Header & Login -->
     <header class="header">
         <div class="box1 overflow">
-            <a href="{% url 'main' %}"><img src="{% static 'images/lohae_logo.png'%}" width=150px alt="logo" class="logo"></a>
+            <a href="{% url 'main' %}"><img src="{% static 'images/lohae_logo.png'%}" width=150px alt="logo"
+                    class="logo"></a>
             <a href="#"><button class="loginbutton">로그인</button></a>
             <div class="line"></div>
         </div>
@@ -50,7 +51,7 @@
                 </a>
             </span>
             <span class="bc">
-                <a href="#">
+                <a href="#go-to-the-message">
                     <div class="button_base b04_3d_tick">
                         <div>응원메시지 보기</div>
                         <div>응원메시지 보기</div>
@@ -104,16 +105,26 @@
         </div>
 
         <!-- Message -->
-        <div class="box5">
-            <span class="inline">
-                <span class="uu"><img src="{% static 'images/category.png'%}" width=40px height="40px" alt="category">
-                    <span class="cheer">의료봉사자분들에게 건네는 따뜻한 응원메시지</span>
+        <a name="go-to-the-message">
+            <div class="box5">
+                <span class="inline">
+                    <span class="uu"><img src="{% static 'images/category.png'%}" width=40px height="40px"
+                            alt="category">
+                        <span class="cheer">의료봉사자분들에게 건네는 따뜻한 응원메시지</span>
+                    </span>
                 </span>
-            </span>
-            <div class="box6">
-                <div class="line2"></div>
+                <div class="box6">
+                    <div class="message-content">
+                        {% for msg in all_msg %}
+                        {{ msg.content}}
+                        작성일자: {{ msg.updated_at|date:"Y-m-d H:i" }}
+                        <br>
+                        {% endfor %}
+                    </div>
+                    <div class="line2"></div>
+                </div>
             </div>
-        </div>
+        </a>
 
     </main>
 

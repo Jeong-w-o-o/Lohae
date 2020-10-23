@@ -273,3 +273,11 @@ button:after {
 .inline {
     display: inline;
 }
+
+a{
+    text-decoration: none;
+}
+
+.message-content{
+    padding-left: 5px;
+}

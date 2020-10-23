@@ -35,6 +35,8 @@
     width: 160px;
     /* border: 1px solid black; */
     margin-top: 20px;
+    text-align: center;
+    margin-left: 25px;
 }
 
 .mini-box {
@@ -53,8 +55,56 @@
     padding-top: 10px;
 }
 
-/* .red-line {
+.write-a-message {
+    color: black;
+    padding-left: 10px;
+    font-size: 30px;
+    margin-top: 35px;
+}
+
+.mini-box-list-of-message { 
+    text-align: left;
+}
+
+.message {
+    border:none;
     width: 1000px;
+    height: 200px;
+    font-size: 30px;
+    background-image: url("/static/images/memo.png");
+    padding-left: 15px;
+    line-height: 50px;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+.submit-btn {
+    text-align: right;
+    margin-right: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.submit-btn-btn {
+    vertical-align: bottom;
+    background: rgb(230, 58, 69);
+    color: rgb(255, 248, 236);
+    border: none;
+    position: relative;
+    height: 30px;
+    font-size: 12px;
+    padding: 0 1em;
+    cursor: pointer;
+    transition: 800ms ease all;
+    outline: none;
+}
+
+#id_content{
+    border:none;
+    width: 1000px;
+<<<<<<< HEAD
     height: 3px;
     background-color: rgb(230, 58, 69);
     /* padding-left: 50px; 
@@ -76,4 +126,11 @@
 .text-box {
     width: 1000px;
     height: 500px;
+=======
+    height: 200px;
+    font-size: 30px;
+    background-image: url("/static/images/memo.png");
+    padding-left: 15px;
+    line-height: 50px;
+>>>>>>> main
 }
