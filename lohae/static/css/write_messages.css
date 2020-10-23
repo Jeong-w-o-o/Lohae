@@ -100,3 +100,13 @@ textarea:focus {
     transition: 800ms ease all;
     outline: none;
 }
+
+#id_content{
+    border:none;
+    width: 1000px;
+    height: 200px;
+    font-size: 30px;
+    background-image: url("/static/images/memo.png");
+    padding-left: 15px;
+    line-height: 50px;
+}

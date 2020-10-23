@@ -16,6 +16,7 @@
 
     <!-- 랜덤박스 고르기 -->
     <div class="mini-box-list">
+
         <div class="mini-box-of-box">
             <div class="mini-box">이미지</div>
             <div class="box-title">이름</div>
@@ -67,38 +68,40 @@
         <div class="mini-box-of-box">
             <div class="mini-box">사진</div>
             <div class="box-title">이름</div>
-            <input type="radio" id="radio" name="rd" checked>
+            <input type="radio" id="message" name="rd" checked>
         </div>
 
         <div class="mini-box-of-box">
             <div class="mini-box">사진</div>
             <div class="box-title">이름</div>
-            <input type="radio" id="radio" name="rd">
+            <input type="radio" id="message" name="rd">
         </div>
 
         <div class="mini-box-of-box">
             <div class="mini-box">사진</div>
             <div class="box-title">이름</div>
-            <input type="radio" id="radio" name="rd">
+            <input type="radio" id="message" name="rd">
         </div>
 
         <!-- Js -->
         <script language="javascript">
             function msg() {
                 if (confirm("구매 완료했습니다.")) {
-                    window.location.href = "{% url 'productlist' %}"
+                    window.location.href = "{% url 'main' %}"
                 }
             }
         </script>
 
 
         <div class="message-box">
-            <form>
-                <textarea class="message" placeholder="To. xxx"></textarea>
-                <div class="submit-btn"><input type="button" value="Submit" class="submit-btn-btn" onclick="msg()">
+            <form method="POST" action="">
+                {% csrf_token %}
+                {{msg_form}}
+                <div class="submit-btn"><input type="submit" value="구매하기" class="submit-btn-btn" onclick="msg()">
                 </div>
             </form>
         </div>
+
     </div>
 </div>
 
