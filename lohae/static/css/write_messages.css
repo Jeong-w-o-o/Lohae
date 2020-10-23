@@ -104,12 +104,12 @@ textarea:focus {
 #id_content{
     border:none;
     width: 1000px;
-<<<<<<< HEAD
-    height: 3px;
-    background-color: rgb(230, 58, 69);
-    /* padding-left: 50px; 
-    }*/
-
+    height: 200px;
+    font-size: 30px;
+    background-image: url("/static/images/memo.png");
+    padding-left: 15px;
+    line-height: 50px;
+}
 
 .message-title {
     padding-left: 10px;
@@ -126,11 +126,9 @@ textarea:focus {
 .text-box {
     width: 1000px;
     height: 500px;
-=======
     height: 200px;
     font-size: 30px;
     background-image: url("/static/images/memo.png");
     padding-left: 15px;
     line-height: 50px;
->>>>>>> main
 }
