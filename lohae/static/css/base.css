@@ -1,91 +1,106 @@
-.line1{
+.line1 {
     width: 1000px;
     height: 3px;
     margin-top: 6px;
-    margin-left:252px;
+    margin-left: 252px;
     margin-bottom: 4px;
     background-color: rgb(230, 58, 69);
 }
-.line2{
+
+.line2 {
     width: 1000px;
     height: 3px;
     margin-top: 4px;
-    margin-left:252px;
+    margin-left: 252px;
     margin-bottom: 2px;
     background-color: rgb(230, 58, 69);
 }
-.overflow{
+
+.overflow {
     overflow: hidden;
     display: inline-block;
 }
-.loginbutton{
+
+.loginbutton {
     margin-left: 10px;
     vertical-align: bottom;
     background: rgb(230, 58, 69);
-    color:rgb(255, 248, 236);
-    border:none;
-    position:relative;
-    height:30px;
-    font-size:12px;
-    padding:0 1em;
-    cursor:pointer;
-    transition:800ms ease all;
-    outline:none;
+    color: rgb(255, 248, 236);
+    border: none;
+    position: relative;
+    height: 30px;
+    font-size: 12px;
+    padding: 0 1em;
+    cursor: pointer;
+    transition: 800ms ease all;
+    outline: none;
     margin-bottom: 4px;
-  }
-.loginbutton:hover{
-    background:rgb(255, 248, 236);
+}
+
+.loginbutton:hover {
+    background: rgb(255, 248, 236);
     color: rgb(230, 58, 69);
-  }
-.loginbutton:before,button:after{
-    content:'';
-    position:absolute;
-    top:0;
-    right:0;
-    height:2px;
-    width:0;
-    background:  rgb(230, 58, 69);
-    transition:400ms ease all;
-  }
-.loginbutton:after{
-    right:inherit;
-    top:inherit;
-    left:0;
-    bottom:0;
-  }
-.loginbutton:hover:before,.loginbutton:hover:after{
-    width:100%;
-    transition:800ms ease all;
-  }
-  .logo{
+}
+
+.loginbutton:before,
+button:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 2px;
+    width: 0;
+    background: rgb(230, 58, 69);
+    transition: 400ms ease all;
+}
+
+.loginbutton:after {
+    right: inherit;
+    top: inherit;
+    left: 0;
+    bottom: 0;
+}
+
+.loginbutton:hover:before,
+.loginbutton:hover:after {
+    width: 100%;
+    transition: 800ms ease all;
+}
+
+.logo {
     margin-top: 22px;
-    margin-bottom: 5px;;
+    margin-bottom: 5px;
+    ;
     margin-left: 679px;
     /* margin: 0 auto; */
 }
-html{
+
+html {
     background-color: rgb(255, 248, 236);
     background-image: url("/static/images/배경2.png");
     background-position: 0px 55px;
     background-repeat: no-repeat;
 
 }
-header{
+
+header {
     background-color: transparent;
 }
-body{
+
+body {
     /* background-color: rgb(255, 248, 236) !important; */
     /* background-image: url('배경2.png');
     background-position: 20px 55px;
     background-repeat: no-repeat; */
     background-color: transparent;
 }
-.box1{
+
+.box1 {
     background-color: transparent;
     margin-right: 250px;
 }
-.font1{
 
+.font1 {
     color: rgb(230, 58, 69);
     font-size: 15px;
     font-weight: bold;
@@ -93,21 +108,23 @@ body{
     margin-top: 2px;
     margin-bottom: 2px;
 }
-.font2{
 
+.font2 {
     color: rgb(230, 58, 69);
     font-size: 15px;
     font-weight: bold;
     margin-left: 110px;
 
 }
-.inline{
+
+.inline {
     display: inline;
 }
-.line3{
+
+.line3 {
     position: relative;
     left: 700px;
-    width:8px;
+    width: 8px;
     height: 10px;
     background-color: rgb(230, 58, 69);
 }
@@ -117,7 +134,7 @@ main {
     height: auto;
 }
 
-.red-box{
+.red-box {
     background-color: rgb(230, 58, 69);
     border-radius: 15px;
     width: 1050px;
@@ -132,18 +149,22 @@ footer {
     height: 100px;
 }
 
-a:link, a:visited, a:hover, a:active {
+a:link,
+a:visited,
+a:hover,
+a:active {
     text-decoration: none;
     color: black;
 }
 
-.user{
+.user {
     color: rgb(230, 58, 69);
     vertical-align: bottom;
     position: relative;
     top: -10px;
     margin-left: 97px;
 }
-.realmargin{
+
+.realmargin {
     margin-left: 225px;
 }
