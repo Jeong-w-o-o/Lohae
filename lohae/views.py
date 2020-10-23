@@ -1,4 +1,10 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
+from django.contrib.auth.forms import UserCreationForm
+from django.contrib.auth import views as auth_view
+from .forms import CustomAuthenticationForm
+
+
+
 
 # Create your views here.
 
@@ -13,3 +19,18 @@ def buy_item(request):
 
 def write_messages(request):
     return render(request, 'write_messages.html')
+
+def signup(request):
+    regi_form = UserCreationForm()
+    if request.method == "POST":
+        filled_form = UserCreationForm(request.POST)
+        if filled_form.is_valid():
+            filled_form.save()
+            return redirect('main')
+    return render(request, 'signup.html', {'regi_form':regi_form})
+
+def login(request):
+    return render(request, 'login.html')
+
+class CustomLoginView(auth_view.LoginView):
+    form_class = CustomAuthenticationForm

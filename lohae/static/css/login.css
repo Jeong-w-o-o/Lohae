@@ -1,0 +1,61 @@
+.logo {
+    margin-top: 30px;
+    margin-bottom: 5px;
+    margin-left: 687px;
+    /* margin: 0 auto; */
+}
+
+html {
+    background-color: rgb(255, 248, 236);
+    background-position: 0px 55px;
+    background-repeat: no-repeat;
+    margin: 0px;
+}
+body{
+    margin: 0px;
+}
+header {
+    background-color: transparent;
+}
+.line {
+    width: 1000px;
+    height: 3px;
+    margin-top: 10px;
+    margin-left: 260px;
+    background-color: rgb(230, 58, 69);
+}
+h1{
+    margin-left: 215px;
+    color: rgb(230, 58, 69);
+}
+.box{
+    margin-top: 20px;
+    margin-left: 500px;
+}
+.box2{
+    margin-top: 20px;
+    margin-left: 400px;
+}
+.h12{
+    margin-left: 300px;
+}
+button{
+    width: 100px;
+    height: 30px;
+    background-color: rgb(230, 58, 69);
+    color: rgb(255, 248, 236);
+    border: none;
+    margin: 20px;
+    margin-left: 215px;
+}
+.input1{
+    width: 100px;
+    height: 30px;
+    background-color: rgb(230, 58, 69);
+    color: rgb(255, 248, 236);
+    border: none;
+}
+.margin{
+    margin-left: 310px;
+    margin-bottom: 20px;
+}
