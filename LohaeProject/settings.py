@@ -28,6 +28,7 @@ DEBUG = True
 ALLOWED_HOSTS = []
 
 
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -70,6 +71,7 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'LohaeProject.wsgi.application'
 
+APPEND_SLASH = False
 
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases

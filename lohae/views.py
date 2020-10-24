@@ -1,5 +1,3 @@
-
-
 from django.shortcuts import render, redirect
 from django.contrib.auth.forms import UserCreationForm, PasswordChangeForm
 from django.contrib.auth import views as auth_view
@@ -27,12 +25,12 @@ def buy_item3(request):
     return render(request, 'buy_item3.html')   
 
 def write_messages(request):
+    msg_form = MsgForm()
     if request.method == "POST":
         filled_form = MsgForm(request.POST)
         if filled_form.is_valid():
             filled_form.save()
             return redirect('main')
-    msg_form = MsgForm()
     return render(request, 'write_messages.html', {'msg_form':msg_form})
 
 def signup(request):
