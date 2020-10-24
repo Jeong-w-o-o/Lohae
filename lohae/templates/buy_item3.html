@@ -17,7 +17,7 @@
     <div class="container">
       <!-- 그림 -->
       <div class="itempicture">
-        <img id="itemPicture" src="{% static 'images/소독랜덤박스2.png'%}" alt="item1" ">
+        <img id="itemPicture" src="{% static 'images/전자기기랜덤박스.png'%}" alt="item1" ">
     </div>
 
   <!--  제품이름 금액 구매하기 버튼까지  -->
@@ -26,13 +26,13 @@
         <div class="itemdetailForGrid">
 
           <div class="itemTitle">
-            소독 랜덤박스
+            전자기기 랜덤박스
           </div>
           <div class="itemRow1">
             판매가
           </div>
           <div class="itemColumn1">
-            20000원(vat 포함)
+            100000원(vat 포함)
           </div>
           <div class="itemCRow2">
             배송비
@@ -58,19 +58,19 @@
           </div>
           <div class="itemColumn4">
             <div class='select-box'>
-              <p> 소독 랜덤박스 A </p>
+              <p> 전자기기 랜덤박스 A </p>
               <img id='select1-down' src="{% static 'images/arrow.jpg' %}"/>
               <p id='select1-value'> 0 </p>
               <img id='select1-up' src="{% static 'images/uparrow.png' %}"/>
             </div>
             <div class='select-box'>
-              <p> 소독 랜덤박스 B </p>
+              <p> 전자기기 랜덤박스 B </p>
               <img id='select2-down' src="{% static 'images/arrow.jpg' %}"/>
               <p id='select2-value'> 0 </p>
               <img id='select2-up' src="{% static 'images/uparrow.png' %}"/>
             </div>
             <div class='select-box'>
-              <p> 소독 랜덤박스 C </p>
+              <p> 전자기기 랜덤박스 C </p>
               <img id='select3-down' src="{% static 'images/arrow.jpg' %}"/>
               <p id='select3-value'> 0 </p>
               <img id='select3-up' src="{% static 'images/uparrow.png' %}"/>
@@ -82,9 +82,8 @@
           </div>
           <div style="display:flex; margin-top:37px;">
             <p id='total-price' >0</p><p>원 </p>
-            
-
           </div>
+
 
           
           <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
@@ -98,7 +97,7 @@
                   $targetEl.innerHTML = parseInt($targetEl.innerHTML) - 1;
                   $totalEl = $('#total-price')[0];
                   $totalEl.innerHTML = $totalEl.innerHTML.replace(/,/g, "");
-                  $totalEl.innerHTML = (parseInt($totalEl.innerHTML) - 20000).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                  $totalEl.innerHTML = (parseInt($totalEl.innerHTML) - 100000).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
                 }
               })
               $("#select1-up").click(() => {
@@ -106,7 +105,7 @@
                 $targetEl.innerHTML = parseInt($targetEl.innerHTML) + 1;
                 $totalEl = $('#total-price')[0];
                 $totalEl.innerHTML = $totalEl.innerHTML.replace(/,/g, "");
-                $totalEl.innerHTML = (parseInt($totalEl.innerHTML) + 20000).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                $totalEl.innerHTML = (parseInt($totalEl.innerHTML) + 100000).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
               })
               // select2 box
               $("#select2-down").click(() => {
@@ -181,27 +180,29 @@
             </div>
           </div>
           <div class="itemDescription">
-            박스A : 일회용 소독 세트
+            박스A : 게임기 세트
 
-            박스B : 소독, 살균 세트
+            박스B : 음향기기 세트
 
-            박스C : 면역 강화 세트
+            박스C : 전자기기 잡화세트
 
 
 
-            손소독제, 일회용마스크,
+            XBOX, SWITCH, PLAYSTATION
 
-            마스크 KF97,94,
+            블루투스 마이크
 
-            일회용 손소독제
+            에어팟, 버즈, 
 
-            소독분무기, 살균제
+            블루투스 스피커
 
-            살균스티커, 자외선 소독용품
+            애플펜슬
+            
+            샤오미밴드
 
-            무료독감예방접종
-
-            면역강화식품(홍삼, 생강차)
+            휴대폰케이스
+            
+            태블릿피씨
 
 
 
@@ -213,9 +214,9 @@
 
     <!-- //상세설명 및 구성품 사진들 -->
     <div class="itemPicture" style="margin-left:120px; margin-bottom: 100px;">
-      <img src="{% static 'images/seta.png'%}" alt="detail">
-      <img src="{% static 'images/setb.png'%}" alt="detail">
-      <img src="{% static 'images/setc.png'%}" alt="detail">
+      <img src="{% static 'images/3_seta.png'%}" alt="detail">
+      <img src="{% static 'images/3_setb.png'%}" alt="detail">
+      <img src="{% static 'images/3_setc.png'%}" alt="detail">
     </div>
   </div>
 </main>

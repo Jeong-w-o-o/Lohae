@@ -23,6 +23,9 @@ def buy_item(request):
 def buy_item2(request):
     return render(request, 'buy_item2.html')   
 
+def buy_item3(request):
+    return render(request, 'buy_item3.html')   
+
 def write_messages(request):
     if request.method == "POST":
         filled_form = MsgForm(request.POST)
