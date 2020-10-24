@@ -1,9 +1,12 @@
+
+
 from django.shortcuts import render, redirect
-from django.contrib.auth.forms import UserCreationForm
+from django.contrib.auth.forms import UserCreationForm, PasswordChangeForm
 from django.contrib.auth import views as auth_view
 from .forms import CustomAuthenticationForm
-from .forms import MsgForm
+from .forms import MsgForm, EditUserProfileForm
 from .models import Message
+
 
 # Create your views here.
 
@@ -16,6 +19,9 @@ def productlist(request):
 
 def buy_item(request):
     return render(request, 'buy_item.html')
+
+def buy_item2(request):
+    return render(request, 'buy_item2.html')    
 
 def write_messages(request):
     if request.method == "POST":
@@ -46,3 +52,26 @@ class CustomLoginView(auth_view.LoginView):
     form_class = CustomAuthenticationForm
 
 
+def change(request):
+    if request.user.is_authenticated:
+        if request.method == "POST":
+            fm = EditUserProfileForm(request.POST, instance=request.user)
+            if fm.is_valid():
+                fm.save()
+        else:
+            fm=EditUserProfileForm(instance=request.user)
+        return render(request, 'change.html', {'name':request.user, 'form':fm})
+    else:
+        return redirect('change')
+
+#비밀번호 바꾸기
+def user_change_pass(request):
+    if request.method == "POST":
+         fm = PasswordChangeForm(user=request.user, data=request.POST)
+         if fm.is_valid():
+            fm.save()
+            return redirect('main')
+    else:
+        fm=PasswordChangeForm(user=request.user)
+    return render(request, 'changepass.html', {'form':fm})
+  

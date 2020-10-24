@@ -1,6 +1,8 @@
 from django.contrib.auth.forms import AuthenticationForm
 from django import forms
 from .models import Message
+from django.contrib.auth.forms import UserChangeForm
+from django.contrib.auth import get_user_model
 
 class CustomAuthenticationForm(AuthenticationForm):
     error_messages = {
@@ -29,3 +31,15 @@ class MsgForm(forms.ModelForm):
             'class': 'msg_content',
             'placeholder': 'To. xxx',
         })
+
+class EditUserProfileForm(UserChangeForm):
+    passward = None
+    class Meta:
+        model=get_user_model()
+        fields = ['username', 'date_joined', 'last_login']
+
+class EditUserProfileForm(UserChangeForm):
+    passward = None
+    class Meta:
+        model=get_user_model()
+        fields = ['username', 'date_joined', 'last_login']

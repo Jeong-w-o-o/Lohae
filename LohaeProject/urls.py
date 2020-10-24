@@ -1,4 +1,3 @@
-
 from django.contrib import admin
 from django.urls import path, include
 from lohae import views
@@ -15,5 +14,7 @@ urlpatterns = [
     path('login/', CustomLoginView.as_view(), name="login"),
     path('logout/', LogoutView.as_view(), name="logout"),
     path('mypage/', views.mypage, name="mypage"),
-
+    path('change/', views.change, name="change"),
+    path('changepass/', views.user_change_pass, name="changepass"),
+    path('buy_item2/', views.buy_item2, name="buy_item2"),
 ]

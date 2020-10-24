@@ -1,14 +1,45 @@
+.recent-list {
+  background-color: white;
+  margin: 10px;
+  height: auto;
+  border: 1px solid white;
+  border-radius: 20px;
+  color: rgb(230, 58, 69);
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.g{
+  margin-left: 70px;
+}
 @font-face {
-    font-family: Maplestory_Bold;
-    src:  url("/static/fonts/Maplestory_Bold.ttf");
-  }
+  font-family: Maplestory_Bold;
+  src:  url("/static/fonts/Maplestory_Bold.ttf");
+}
 
 @font-face {
-    font-family: Cafe24Dangdanghae;
-    src:  url("/static/fonts/Cafe24Dangdanghae.ttf");
-  }
+  font-family: Cafe24Dangdanghae;
+  src:  url("/static/fonts/Cafe24Dangdanghae.ttf");
+}
 .title{
-    color: rgb(255, 248, 236);
-    margin-left: 50px;
-    font-family: Maplestory_Bold;
+  color: rgb(255, 248, 236);
+  margin-left: 50px;
+  font-family: Maplestory_Bold;
+}
+.button1{
+  width: 100px;
+  height: 30px;
+  background-color: rgb(230, 58, 69);
+  color: rgb(255, 248, 236);
+  border: none;
+  margin: 20px;
+  margin-left: 100px;
+}
+.button2{
+  width: 100px;
+  height: 30px;
+  background-color: rgb(230, 58, 69);
+  color: rgb(255, 248, 236);
+  border: none;
+  margin: 20px;
+  margin-left: 25px;
 }

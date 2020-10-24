@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title%}LOHAE - Mypage{% endblock %}
+
+{% block link %}{% static 'css/change.css' %}{% endblock %}
+
+{% block content%}
+<h1 class="title">비밀번호수정</h1>
+<div class="recent-list">
+    <div class="g">
+        <form action="" method="post" novalidate>
+            {% csrf_token %}
+            {% if form.non_field_errors %}
+            {% for error in form.non_field_errors %}
+            <p>{{error}}</p>
+            {% endfor %}
+            {% endif %}
+            {% for fm in form %}
+            {{fm.label_tag}} {{fm}} {{fm.errors|striptags}} <br> <br>
+            {% endfor %}
+            
+            <input class = "button3" type="submit" value="저장"> 
+        </form>
+        <a href="{% url 'change' %}"><button class = "button3">회원정보수정</button></a>
+    </div>
+</div>
+
+{% endblock %}
