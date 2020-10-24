@@ -62,7 +62,7 @@
                 <option value="3">소독 랜덤박스 C -----40000원</option>
               </select>
             </form>
-            <div class="itemRow5">
+            <div>
               <form name='form'>
                 <table>
                   <tr>
@@ -73,7 +73,7 @@
                           <td><input type='text' name='count' value='1' size='1' readonly>
                           <td>
                           <td>
-                            <a href='' onclick='javascript_:change(1);'><img src="{% static 'images/arrow.jpg'%}"
+                            <a href='' onclick='javascript_:change(1);'><img src="{% static 'images/uparrow.png'%}"
                                 onclick='javascript_:change(1);'></a><br>
                             <a href='' onclick='javascript_:change(-1);'><img src="{% static 'images/arrow.jpg'%}"
                                 onclick='javascript_:change(1);'></a>
@@ -95,12 +95,13 @@
                 }
               </script>
             </div>
-            <div class="itemColumn5">
+          </div>
+            <div class="itemColumn4">
 
               합 계<input type="text" name="totalPrice" id="totalPrice" placeholder="0원" />
             </div>
 
-          </div>
+          
           <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
           <script type="text/javascript">
             $(function () {
