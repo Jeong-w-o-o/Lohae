@@ -6,7 +6,8 @@ from lohae.views import CustomLoginView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.main, name="main"),
+     path('', views.main, name="main"),
+    path('main', views.main, name="main"),
     path('productlist', views.productlist, name="productlist"),
     path('buy_item/', views.buy_item, name="buy_item"),
     path('write_messages/', views.write_messages, name="write_messages"),
@@ -18,3 +19,4 @@ urlpatterns = [
     path('changepass/', views.user_change_pass, name="changepass"),
     path('buy_item2/', views.buy_item2, name="buy_item2"),
 ]
+

@@ -21,7 +21,7 @@ def buy_item(request):
     return render(request, 'buy_item.html')
 
 def buy_item2(request):
-    return render(request, 'buy_item2.html')    
+    return render(request, 'buy_item2.html')   
 
 def write_messages(request):
     if request.method == "POST":
